@@ -60,10 +60,14 @@ env:
             config:
                 JoomlaBrowser:
                     database host: 'mariadb'
+                Helper\JoomlaDb:
+                    dsn: 'mysql:host=mariadb;dbname=test_joomla'
     mysql8:
         modules:
             config:
                 JoomlaBrowser:
                     database host: 'mysql8'
+                Helper\JoomlaDb:
+                    dsn: 'mysql:host=mysql8;dbname=test_joomla'
     mysql:
     # Nothing to change
