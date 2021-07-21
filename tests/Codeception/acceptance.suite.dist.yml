@@ -55,6 +55,11 @@ env:
                     database type: 'pgsql'
                 Helper\JoomlaDb:
                     dsn: 'pgsql:host=postgres;dbname=test_joomla'
+    mariadb:
+        modules:
+            config:
+                JoomlaBrowser:
+                    database host: 'mariadb'
     mysql8:
         modules:
             config:
