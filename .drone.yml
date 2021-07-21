@@ -137,7 +137,7 @@ steps:
       - bash tests/Codeception/drone-system-run.sh "$(pwd)" mysql
 
   - name: system-tests-mariadb
-    depends_on: [ javascript-cs ]
+    depends_on: [ system-tests-mysql ]
     image: joomlaprojects/docker-images:systemtests
     environment:
       JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK: 1
@@ -286,6 +286,6 @@ steps:
 
 ---
 kind: signature
-hmac: 6dab06907cfebdeaa495f15a458cd684d2f87ff0702db1debcb3a8631a4926f2
+hmac: 7b4e47e1cade7797ef87df0780d0f5d63e2d76ddb976352374ca9e0dff91618f
 
 ...
